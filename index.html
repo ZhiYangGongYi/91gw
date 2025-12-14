@@ -124,10 +124,73 @@
 				color: black;
 				transform: translateY(-585px) translateX(155px);
 			}
+			.st,.st::before {
+				height: 600px;
+				width: 500px;
+				background: linear-gradient(195deg,rgb(50,11,30),black);
+				border-radius: 60px;
+				margin: 40px auto;
+				float: left;
+			}
+			.st {
+				transform: translateY(-600px);
+				margin-left: 40px;
+				animation-name: a,b;
+				animation-duration: 3s;
+			}
+			.st::before {
+				content: '';
+				display: block;
+				z-index: -1;
+				filter: blur(20px);
+				transform: translateY(-40px);
+			}
+			.st h2 {
+				text-align: center;
+				transform: translateY(-640px) translateX(170px);
+				color: gray;
+				text-shadow: 0 0 20px gray;
+				width: 4em;
+				font-size: 40px;
+				position: relative;
+			}
+			.st h2::before {
+				content: '';
+				display: block;
+				background: linear-gradient(45deg,black,gray);
+				width: 0;
+				height: 3px;
+				border-radius: 50px;
+				position: absolute;
+				top: 705px;
+				transition: width 0.3s;
+			}
+			.st p {
+				color: gray;
+				text-align: center;
+				line-height: 30px;
+				font-size: 20px;
+				transform: translateY(-655px);
+				margin: 0 2em;
+				transition: text-shadow 0.3s;
+			}
+			.st:hover p {
+				text-shadow: 0 0 20px white;
+			}
+			.st:hover h2::before{
+				width: 4em;
+			}
+			.a1 {
+				transform: translateY(-620px) translateX(155px);
+			}
+			.a1:hover {
+				transform: translateY(-625px) translateX(155px);
+			}
 		</style>
 	</head>
 	<body>
 		<div class="jy"></div>
 		<div class="wp"><h2>91网盘</h2><p>91网盘 — 定义你的高效存储<br>不止于存储，更致力于连接与创造。<br>我们提供极速稳的上传下载体验，打破等待的束缚；运用银行级加密技术，为你的每一份隐私与珍贵数据筑起可靠防线。<br>无论你身在何处，通过网页、电脑或手机，都能无缝访问所有文件。无论是个人影音珍藏的安全备份，还是团队项目的实时协作与共享，91网盘皆可一“盘”搞定。<br>更智能，更从容。 从这里开始，高效管理你的数字世界。</p><a href="http://pan.xn--91-ic0g281c.vip/">前往</a></div>
+		<div class="st"><h2>91色图</h2><p>91色图 — 看见你想找的一切<br>不止于搜索，更在于精准发现。<br>我们提供极速精准的图像搜索引擎，使用关键词描述，能毫秒级匹配海量高质量结果，打破寻找灵感和素材的边界。<br>无论你是在寻找设计参考，还是追溯图片来源，通过网页端或手机应用，91搜图都能为你提供清晰、可靠的视觉答案。从专业创作到日常好奇，让每一次搜索都直达目标。<br>更智能，更直观。 从这里开始，让世界一目了然。</p><a class="a1" href="http://img.xn--91-ic0g281c.vip/">前往</a></div>
 	</body>
 </html>
